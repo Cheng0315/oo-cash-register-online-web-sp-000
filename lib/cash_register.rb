@@ -15,7 +15,7 @@ class CashRegister
     discount = self.discount.to_f / self.total.to_f * 100
     self.total -= discount
     "After the discount, the total comes to #{@total}."
-  endl
+  end
 
   def items
     []

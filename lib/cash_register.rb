@@ -16,7 +16,7 @@ class CashRegister
     "After the discount, the total comes to $#{@total.to_i}."
   end
 
-  def self.items
+  def items
     []
   end
 end

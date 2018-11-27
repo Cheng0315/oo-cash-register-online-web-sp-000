@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def apply_discount
-    discount = @discount.percent_of(@total)
+    discount = @discount.float / @total.float
     @total -= discount
   end
 

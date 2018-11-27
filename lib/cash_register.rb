@@ -12,7 +12,8 @@ class CashRegister
   end
 
   def apply_discount
-    discount = @discount.to_f % @total.to_f
+    discount = @discount.to_f / @total.to_f * 1000
+    self.total -= discount
     "After the discount, the total comes to #{@total}."
   end
 
